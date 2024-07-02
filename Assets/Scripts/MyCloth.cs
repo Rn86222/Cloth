@@ -127,7 +127,9 @@ public class MyCloth : MonoBehaviour
         }
     }
 
-    private Vector3[] CalcWindForce(int idx0, int idx1, int idx2) 
+    // Referred to https://dl.acm.org/doi/10.1145/2614106.2614120
+    // and https://github.com/yuki-koyama/elasty/blob/b959790659968d3793f78c882bb39619c81886ce/src/cloth-sim-object.cpp#L248
+    private Vector3[] CalcWindForce(int idx0, int idx1, int idx2)
     {
         var massSum = particles[idx0].mass + particles[idx1].mass + particles[idx2].mass;
         if (massSum == Mathf.Infinity)
