@@ -1614,9 +1614,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9ebc9bae1ae02442986408187b417ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxValue: 0.02
+  maxValue: 0.01
   minValue: 0.001
-  initialValue: 0.0105
+  initialValue: 0.0055
 --- !u!114 &890733443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2993,8 +2993,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxValue: 0.02
-  minValue: 0.001
-  initialValue: 0.0105
+  minValue: 0.01
+  initialValue: 0.015
 --- !u!114 &1647014048
 MonoBehaviour:
   m_ObjectHideFlags: 0

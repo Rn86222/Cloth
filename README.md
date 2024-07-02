@@ -10,7 +10,7 @@ https://elastic-body-simulation-rn86222.glitch.me/
 
 ## 3D の PBD
 
-Unity 上で(C#により)風になびく布を実装した。本レポジトリはその Unity のプロジェクトのレポジトリになっており、コードは`./Assets/Scripts/`に存在する。布は、四角形のメッシュ(厳密には三角形のメッシュ x2)を 64x64 個並べ、各頂点に粒子を置き、距離制約を課すことで表現した。風の表現は、[この論文](https://dl.acm.org/doi/10.1145/2614106.2614120)と、[このレポジトリ](https://github.com/yuki-koyama/elasty)(主に[このコード](https://github.com/yuki-koyama/elasty/blob/b959790659968d3793f78c882bb39619c81886ce/src/cloth-sim-object.cpp))を参考にして実装した。  
+Unity 上で(C#により)風になびく布を実装した。本レポジトリはその Unity のプロジェクトのレポジトリになっており、コードは`./Assets/Scripts/`に存在する。布は、四角形のメッシュ(厳密には三角形のメッシュ x2)を 64x64 個並べ、各頂点に粒子を置き、距離制約を課すことで表現した。風の表現は、[この論文](https://dl.acm.org/doi/10.1145/2614106.2614120)と、[このレポジトリ](https://github.com/yuki-koyama/elasty)(主に[このコード](https://github.com/yuki-koyama/elasty/blob/b959790659968d3793f78c882bb39619c81886ce/src/cloth-sim-object.cpp))を参考にして実装した。`./Assets/Scripts/MyCloth.cs`の`CalcWindForce`関数がそれにあたる。
 
 <img width="500" src="./image.png">
 
